@@ -1,3 +1,14 @@
 {{- if ne .chezmoi.os "windows" }}
 .chezmoiscripts/configure-windows-env.ps1
 {{- end }}
+
+# Emacs: generated/runtime files, not part of the tracked config
+.config/emacs/elpa/
+.config/emacs/eln-cache/
+.config/emacs/backups/
+.config/emacs/autosaves/
+.config/emacs/auto-save-list/
+.config/emacs/transient/
+.config/emacs/recentf
+.config/emacs/history
+.config/emacs/places
