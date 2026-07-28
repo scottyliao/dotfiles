@@ -6,7 +6,10 @@
 
 (use-package recentf
   :init (recentf-mode 1)
-  :custom (recentf-max-saved-items 200))
+  :custom
+  (recentf-max-saved-items 200)
+  (recentf-exclude `(,(regexp-quote (expand-file-name "elpa" user-emacs-directory))
+                      ,(regexp-quote (expand-file-name ".cache" user-emacs-directory)))))
 
 (use-package saveplace
   :init (save-place-mode 1))
