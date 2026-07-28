@@ -1,6 +1,7 @@
 ;;; init-completion.el --- Minibuffer and in-buffer completion -*- lexical-binding: t; -*-
 
-;; Remember history across sessions.
+;;; Session history persistence
+
 (use-package savehist
   :init (savehist-mode 1))
 

@@ -1,4 +1,4 @@
-;;; init-dev.el --- LSP, project management, version control -*- lexical-binding: t; -*-
+;;; init-dev.el --- LSP, project management, version control, file tree -*- lexical-binding: t; -*-
 
 ;; LSP client (built into Emacs 29+; requires a language server on PATH)
 (use-package eglot
