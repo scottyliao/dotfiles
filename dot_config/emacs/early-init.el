@@ -12,6 +12,11 @@
 (push '(tool-bar-lines . 0) default-frame-alist)
 (push '(vertical-scroll-bars) default-frame-alist)
 
+;; Set the initial frame size and font before the first frame is created
+;; (setting them later would resize/flash the frame).
+(push '(width . 160) default-frame-alist)
+(push '(font . "JetBrainsMono NF-14") default-frame-alist)
+
 ;; Don't resize the frame to fit default settings; avoids extra layout work.
 (setq frame-inhibit-implied-resize t)
 

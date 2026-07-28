@@ -19,5 +19,9 @@
 (use-package magit
   :bind ("C-x g" . magit-status))
 
+;; File tree sidebar
+(use-package treemacs
+  :bind ("C-x t t" . treemacs))
+
 (provide 'init-dev)
 ;;; init-dev.el ends here

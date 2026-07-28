@@ -33,7 +33,8 @@
 (dolist (module '(init-ui
                    init-editing
                    init-completion
-                   init-dev))
+                   init-dev
+                   init-dashboard))
   (require module))
 
 ;;; init.el ends here
